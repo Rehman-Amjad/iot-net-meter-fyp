@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1062077089779",
+    "firebase_url": "https://iot-based-net-energy-metering-default-rtdb.firebaseio.com",
+    "project_id": "iot-based-net-energy-metering",
+    "storage_bucket": "iot-based-net-energy-metering.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062077089779:android:6908d46f9ddfa4af0c7486",
+        "android_client_info": {
+          "package_name": "com.rehman.netenergymeetring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062077089779-a41si5a12jcqimab2v845peg49af836j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rehman.netenergymeetring",
+            "certificate_hash": "41726217185bb2987435b1789a6b609cb71bc1e7"
+          }
+        },
+        {
+          "client_id": "1062077089779-6uls1rrfcdmgqhk6pg96lvum3oostev8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAymXWX9M12luCc1b9vx-ngt0ZwTZr-pOE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062077089779-6uls1rrfcdmgqhk6pg96lvum3oostev8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

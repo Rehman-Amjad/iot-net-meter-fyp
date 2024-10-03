@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/drawable/ic_back.xml" value="0.1125" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/drawable/ic_date_white.xml" value="0.1125" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/drawable/ic_id.xml" value="0.1125" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/drawable/nav_profile.xml" value="0.1125" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/drawable/view_background.xml" value="0.1125" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/layout/activity_delete_list_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/layout/activity_history.xml" value="0.20416666666666666" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/layout/activity_history_delete.xml" value="0.20416666666666666" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/layout/activity_home_light.xml" value="0.20416666666666666" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/layout/activity_light_control.xml" value="0.20416666666666666" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/layout/activity_login.xml" value="0.19010416666666666" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/layout/activity_meter_control.xml" value="0.22" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/layout/activity_meter_image.xml" value="0.19010416666666666" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/layout/activity_splash.xml" value="0.19010416666666666" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/layout/activity_voltage.xml" value="0.20416666666666666" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/layout/activity_wapda.xml" value="0.19010416666666666" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/layout/delete_list_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/layout/drawer_header.xml" value="0.20416666666666666" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/layout/list_item.xml" value="0.33" />
+        <entry key="..\:/NetEnergyMeetring/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
