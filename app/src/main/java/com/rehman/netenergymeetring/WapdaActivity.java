@@ -43,18 +43,18 @@ public class WapdaActivity extends AppCompatActivity {
                     value = snapshot.child("MeterInfos").getValue(String.class);
                     date = snapshot.child("DateTime").getValue(String.class);
 
-                    if (value.equals("2"))
+                    if (value.equals("1"))
                     {
                         tv_text2.setText("Meter 2 is ON");
                         tv_text.setText("Meter 1 is OFF");
                         progressDialog.dismiss();
 
-                    }else if (value.equals("1"))
+                    }else if (value.equals("0"))
                     {
                         tv_text2.setText("Meter 2 is OFF");
                         tv_text.setText("Meter 1 is ON");
                         progressDialog.dismiss();
-                    }else if(value.equals("0"))
+                    }else if(value.equals("2"))
                     {
                         tv_text.setText("Meter 1 is OFF");
                         tv_text2.setText("Meter 2 is OFF");
