@@ -105,6 +105,12 @@ public class MainActivity extends AppCompatActivity {
                         drayerLayout.closeDrawer(GravityCompat.START);
                         break;
 
+                        case R.id.menu_billCalculate:
+                        Intent billIntent=new Intent(MainActivity.this, BillCalculateActivity.class);
+                        startActivity(billIntent);
+                        drayerLayout.closeDrawer(GravityCompat.START);
+                        break;
+
                     case R.id.menu_history:
                         Intent historyntent=new Intent(MainActivity.this, HistoryActivity.class);
                         startActivity(historyntent);

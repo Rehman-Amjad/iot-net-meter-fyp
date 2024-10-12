@@ -34,6 +34,10 @@
         android:icon="@drawable/ic_meter_control"
         android:title="Meter Control"/>
 
+    <item android:id="@+id/menu_billCalculate"
+        android:icon="@drawable/ic_meter_control"
+        android:title="Bill Calculate"/>
+
     <item android:id="@+id/menu_history"
         android:icon="@drawable/ic_history"
         android:title="History"/>

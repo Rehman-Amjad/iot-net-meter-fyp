@@ -13,6 +13,9 @@
         android:theme="@style/Theme.NetEnergyMeetring"
         tools:targetApi="31">
         <activity
+            android:name=".BillCalculateActivity"
+            android:exported="false" />
+        <activity
             android:name=".FanControlAcitivty"
             android:exported="false" />
         <activity

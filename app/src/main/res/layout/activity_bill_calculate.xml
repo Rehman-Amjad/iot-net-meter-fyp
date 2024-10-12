@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BillCalculateActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bill Calculator"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#3F51B5"
+            android:padding="8dp"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <!-- Enter Consumption Unit -->
+        <EditText
+            android:id="@+id/inputUnits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter consumed unit"
+            android:inputType="number"
+            android:layout_below="@id/titleText"
+            android:layout_marginTop="16dp"
+            android:background="@android:drawable/edit_text" />
+
+        <!-- Protected Consumer Label -->
+        <TextView
+            android:id="@+id/protectedConsumerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Protected Consumer"
+            android:textStyle="bold"
+            android:layout_below="@id/inputUnits"
+            android:layout_marginTop="16dp" />
+
+        <!-- Protected Consumer Rate Input -->
+        <EditText
+            android:id="@+id/protectedRateInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Rate"
+            android:inputType="numberDecimal"
+            android:layout_toRightOf="@id/protectedConsumerText"
+            android:layout_below="@id/inputUnits"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:drawable/edit_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 to 200 Units"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/inputUnits"
+            android:layout_marginTop="16dp" />
+
+        <!-- Non Protected Consumer Section -->
+        <TextView
+            android:id="@+id/nonProtectedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non Protected Consumer"
+            android:textStyle="bold"
+            android:layout_below="@id/protectedConsumerText"
+            android:layout_marginTop="16dp" />
+
+        <!-- 201 to 300 Units Rate -->
+        <EditText
+            android:id="@+id/rate201to300Input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="201 to 300 units rate"
+            android:inputType="numberDecimal"
+            android:layout_below="@id/nonProtectedText"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/edit_text" />
+
+        <!-- Above 300 Units Rate -->
+        <EditText
+            android:id="@+id/rateAbove300Input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="above 300 units rate"
+            android:inputType="numberDecimal"
+            android:layout_below="@id/rate201to300Input"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/edit_text" />
+
+        <!-- GST on units -->
+        <EditText
+            android:id="@+id/gstInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="GST on units"
+            android:inputType="numberDecimal"
+            android:layout_below="@id/rateAbove300Input"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/edit_text" />
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:layout_below="@id/gstInput"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true" />
+
+        <!-- Total Bill Amount -->
+        <TextView
+            android:id="@+id/totalBillText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Bill amount: Rs.0"
+            android:layout_below="@id/calculateButton"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true" />
+
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_below="@id/totalBillText"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -3,6 +3,7 @@ package com.rehman.netenergymeetring;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,6 +24,7 @@ public class LightControlActivity extends AppCompatActivity {
     Button btn_light1_on,btn_light1_off,btn_light2_on,btn_light2_off;
     String value,value2;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
