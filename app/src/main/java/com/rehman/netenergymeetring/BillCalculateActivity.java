@@ -57,18 +57,32 @@ public class BillCalculateActivity extends AppCompatActivity {
             double gstPercentage = Double.parseDouble(gstInput.getText().toString().trim());
 
             double totalBill = 0;
+            double bill = 0;
 
-            // Calculate based on units consumed
-            if (consumedUnits <= 200) {
-                totalBill = consumedUnits * protectedRate;
-            } else if (consumedUnits <= 300) {
-                totalBill = 200 * protectedRate + (consumedUnits - 200) * rate201to300;
-            } else {
-                totalBill = 200 * protectedRate + 100 * rate201to300 + (consumedUnits - 300) * rateAbove300;
+
+            if(consumedUnits >300){
+                bill =  consumedUnits * rateAbove300;
+            }else if(consumedUnits > 200){
+                bill = consumedUnits * rate201to300;
+            }else{
+                bill = consumedUnits * protectedRate;
             }
 
-            // Add GST
-            totalBill += totalBill * (gstPercentage / 100);
+            totalBill = bill * gstPercentage / 100;
+
+            totalBill  = totalBill + bill;
+
+//            // Calculate based on units consumed
+//            if (consumedUnits <= 200) {
+//                totalBill = consumedUnits * protectedRate;
+//            } else if (consumedUnits <= 300) {
+//                totalBill = 200 * protectedRate + (consumedUnits - 200) * rate201to300;
+//            } else {
+//                totalBill = 200 * protectedRate + 100 * rate201to300 + (consumedUnits - 300) * rateAbove300;
+//            }
+//
+//            // Add GST
+//            totalBill += totalBill * (gstPercentage / 100);
 
             // Display total bill
             totalBillText.setText("Total Bill amount: Rs." + totalBill);

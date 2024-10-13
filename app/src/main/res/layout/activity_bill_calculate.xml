@@ -16,12 +16,13 @@
         <!-- Title -->
         <TextView
             android:id="@+id/titleText"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Bill Calculator"
             android:textSize="24sp"
             android:textStyle="bold"
             android:background="#3F51B5"
+            android:textAlignment="center"
             android:padding="8dp"
             android:textColor="#FFFFFF"
             android:layout_alignParentTop="true"
@@ -41,76 +42,140 @@
         <!-- Protected Consumer Label -->
         <TextView
             android:id="@+id/protectedConsumerText"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Protected Consumer"
             android:textStyle="bold"
+            android:textAlignment="center"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:background="#3F51B5"
             android:layout_below="@id/inputUnits"
             android:layout_marginTop="16dp" />
 
         <!-- Protected Consumer Rate Input -->
         <EditText
             android:id="@+id/protectedRateInput"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Rate"
             android:inputType="numberDecimal"
-            android:layout_toRightOf="@id/protectedConsumerText"
-            android:layout_below="@id/inputUnits"
+            android:layout_below="@id/protectedConsumerText"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:background="@android:drawable/edit_text" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1 to 200 Units"
-            android:layout_alignParentRight="true"
-            android:layout_below="@id/inputUnits"
-            android:layout_marginTop="16dp" />
 
         <!-- Non Protected Consumer Section -->
         <TextView
             android:id="@+id/nonProtectedText"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Non Protected Consumer"
             android:textStyle="bold"
-            android:layout_below="@id/protectedConsumerText"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:background="#3F51B5"
+            android:layout_below="@id/protectedRateInput"
             android:layout_marginTop="16dp" />
 
         <!-- 201 to 300 Units Rate -->
-        <EditText
-            android:id="@+id/rate201to300Input"
-            android:layout_width="wrap_content"
+
+        <LinearLayout
+            android:id="@+id/rate201to300Layout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="201 to 300 units rate"
-            android:inputType="numberDecimal"
-            android:layout_below="@id/nonProtectedText"
-            android:layout_marginTop="8dp"
-            android:background="@android:drawable/edit_text" />
+            android:orientation="horizontal"
+            android:layout_below="@+id/nonProtectedText"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="101 to 300 Unit: "
+                android:layout_below="@id/calculateButton"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/rate201to300Input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rate"
+                android:inputType="numberDecimal"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/nonProtectedText"
+                android:layout_marginTop="8dp"
+                android:background="@android:drawable/edit_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rate300Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/rate201to300Layout"
+            android:gravity="center|start"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Above 300 Unit: "
+                android:layout_below="@id/calculateButton"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/rateAbove300Input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rate"
+                android:inputType="numberDecimal"
+                android:layout_below="@id/rate201to300Layout"
+                android:layout_marginTop="8dp"
+                android:background="@android:drawable/edit_text" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/gstLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/rate300Layout"
+            android:gravity="center|start"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GST Rate%: "
+                android:layout_below="@id/calculateButton"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/gstInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rate"
+                android:inputType="numberDecimal"
+                android:layout_below="@id/rate300Layout"
+                android:layout_marginTop="8dp"
+                android:background="@android:drawable/edit_text" />
+
+        </LinearLayout>
+
 
         <!-- Above 300 Units Rate -->
-        <EditText
-            android:id="@+id/rateAbove300Input"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="above 300 units rate"
-            android:inputType="numberDecimal"
-            android:layout_below="@id/rate201to300Input"
-            android:layout_marginTop="8dp"
-            android:background="@android:drawable/edit_text" />
 
         <!-- GST on units -->
-        <EditText
-            android:id="@+id/gstInput"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="GST on units"
-            android:inputType="numberDecimal"
-            android:layout_below="@id/rateAbove300Input"
-            android:layout_marginTop="8dp"
-            android:background="@android:drawable/edit_text" />
+
 
         <!-- Calculate Button -->
         <Button
@@ -118,7 +183,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Calculate"
-            android:layout_below="@id/gstInput"
+            android:layout_below="@id/gstLayout"
             android:layout_marginTop="16dp"
             android:backgroundTint="#D32F2F"
             android:textColor="#FFFFFF"
